@@ -1,0 +1,7 @@
+insmod datehook
+
+if [ "$MONTH" -eq "4" -a "$DAY" -eq "1" ] ; then
+  configfile "${prefix}/afd2012.cfg"
+else
+  configfile "${prefix}/main.cfg"
+fi
